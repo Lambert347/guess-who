@@ -11,9 +11,9 @@ function onReady(){
     for (let i = 0; i < people.length; i++){
         userName = people[i].githubUsername;
         let name = people[i].name; 
-        $('#addHere').append(`
-        <div class="img">
-        <img src="https://github.com/${userName}.png?size=250" img class="image" img id="${name}" alt="Profile image of Dev"></img>`)
+        $('.imgParent').append(`
+        <img src="https://github.com/${userName}.png?size=250" img class="image" img id="${name}" 
+        alt="Profile image of Dev"></img>`)
     }
 
     randomPerson(min, max);
